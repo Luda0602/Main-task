@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+
+.task-list {
+  display: flex;
+  padding: 120px;
+  gap: 12px;
+  flex-direction: column;
+  justify-content: center;
+}
+.task-title {
+  color: blueviolet;
+  font-size: 28px;
+}
+
+.task-title:hover {
+  color: rgb(48, 6, 112);
+}
+
+.task-desc {
+  color: black;
+  font-size: 17px;
+}

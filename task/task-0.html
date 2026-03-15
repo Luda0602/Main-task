@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 0</title>
+    <link rel="stylesheet" href="../css/styles.css"
+  </head>
+  <body>
+    <h1>Обчислити значення виразів</h1>
+    <ol>
+      <li>S1=a+12+b</li>
+      <li>S2=(a+b/2a) - корінь квадратний виразу a+b/2a</li>
+      <li>S3=(a+b)*c - корінь кубічний виразу (a+b)c</li>
+      <li>S4=sin⁡(a/-b)</li>
+    </ol>
+    <script>
+ let numberA = parseFloat(prompt('Введіть число a', 0));
+  let numberB = parseFloat(prompt('Введіть число b', 0));
+  let numberC = parseFloat(prompt('Введіть число c', 0));
+
+ 
+  let resultS1 = numberA + 12 + numberB;
+
+ 
+  let tempS2 = numberA + numberB / (2 * numberA);
+  let resultS2 = tempS2 - Math.sqrt(tempS2);
+
+  
+  let tempS3 = (numberA + numberB) * numberC;
+  let resultS3 = tempS3 - Math.cbrt(tempS3);
+
+  
+  let resultS4 = Math.sin(numberA / -numberB);
+
+      // Виводимо результат
+  document.write(
+    `<p>Результат S1: ${resultS1} <br>
+     Результат S2: ${resultS2} <br>
+     Результат S3: ${resultS3} <br>
+     Результат S4: ${resultS4}</p>`
+  );
+    </script>
+  </body>
+</html>
