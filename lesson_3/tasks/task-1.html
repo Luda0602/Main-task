@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <h1>Задача 1</h1>
+    <p>
+      З клавіатури вводяться імена двох дітей та кількість у них цукерок.
+      Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або
+      вивести, що кількість однакова.
+    </p>
+
+    <script>
+      const name1 = prompt("Введіть ім'я першої дитини", "Олена");
+      const candies1 = parseInt(
+        prompt("Введіть кількість цукерок першої дитини", "10"),
+      );
+      const name2 = prompt("Введіть ім'я другої дитини", "Таня");
+      const candies2 = parseInt(
+        prompt("Введіть кількість цукерок другої дитини", "7"),
+      );
+      if (candies1 > candies2)
+        document.write(`У ${name1} кількість цукерок є більшою`);
+      else if (candies1 < candies2)
+        document.write(`У ${name2} кількість цукерок є більшою`);
+      else
+        document.write(`У ${name1} та ${name2} кількість цукерок є однаковою`);
+    </script>
+    <a href="../index.html">back</a>
+  </body>
+</html>
