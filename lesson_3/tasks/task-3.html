@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 3</title>
+  </head>
+  <body>
+    <h1>Задача 3</h1>
+    <p>
+      Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за
+      2 спроби.
+    </p>
+    <script>
+      let number = Math.floor(Math.random() * 5) + 1;
+
+      const attempt1 = parseInt(prompt("Перша спроба (1-5)", "4"));
+
+      if (number === attempt1) {
+        document.write(`Ви вгадали з першої спроби! Це число ${number}`);
+      } else {
+        const attempt2 = parseInt(
+          prompt("Ви не вгадали з першої спроби!Друга спроба (1-5)", "1"),
+        );
+
+        if (number === attempt2) {
+          document.write(`Ви вгадали з другої спроби! Це число ${number}`);
+        } else {
+          document.write(
+            `На жаль, ви не вгадали. Загадане число було ${number}`,
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
