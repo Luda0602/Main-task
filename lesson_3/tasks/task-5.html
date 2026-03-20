@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <h1>Задача 5</h1>
+    <p>
+      З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий
+      автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного
+      засобу, яким він може керувати.
+    </p>
+    <script>
+      let caregoryDriver = prompt("Введіть назву категорії", "B");
+      caregoryDriver = caregoryDriver.toUpperCase();
+      let result;
+      switch (caregoryDriver) {
+        case "A":
+          result = "A - Мотоцикл";
+          break;
+        case "B":
+          result = "B - Легковий автомобіль";
+          break;
+        case "C":
+          result = " C - Вантажний автомобіль";
+          break;
+        default:
+          result = "Помилка  назви категорії";
+          break;
+      }
+      document.write(result);
+    </script>
+    <a href="../index.html">back</a>
+  </body>
+</html>
