@@ -14,23 +14,18 @@ ul {
   list-style-type: none;
 }
 
-.task-list {
+.content_list {
   display: flex;
   padding: 120px;
   gap: 12px;
   flex-direction: column;
   justify-content: center;
 }
-.task-title {
+.content-link {
   color: blueviolet;
   font-size: 28px;
 }
 
-.task-title:hover {
+.content-link:hover {
   color: rgb(48, 6, 112);
-}
-
-.task-desc {
-  color: black;
-  font-size: 17px;
 }
