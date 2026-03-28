@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 2</title>
+    <link rel="stylesheet" href="/lesson_5/css/task-style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a href="../index.html" class="back">← Назад</a>
+
+      <div class="card">
+        <h1>Задача 2</h1>
+
+        <p class="description">
+          Вивести на екран номери місяців весни і літа (від 3 до 8)
+        </p>
+      </div>
+    </div>
+
+    <script>
+      if (confirm("Почати тестування?")) {
+        for (let month = 3; month <= 8; month++) {
+          document.write(`${month} <br>`);
+        }
+      }
+    </script>
+  </body>
+</html>
