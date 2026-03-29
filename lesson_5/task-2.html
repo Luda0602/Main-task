@@ -22,7 +22,11 @@
     <script>
       if (confirm("Почати тестування?")) {
         for (let month = 3; month <= 8; month++) {
-          document.write(`${month} <br>`);
+          if (month < 6) {
+            document.write(`Весна: ${month}<br>`);
+          } else {
+            document.write(`Літо: ${month}<br>`);
+          }
         }
       }
     </script>
