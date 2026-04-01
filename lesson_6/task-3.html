@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 1</title>
+    <link rel="stylesheet" href="../lesson_5/css/task-style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a href="../index.html" class="back">← Назад</a>
+
+      <div class="card">
+        <h1>Задача 1</h1>
+
+        <p class="description">
+          На складі зберігається певна кількість ящиків з яблуками (наприклад,
+          15). Коли під’їде машина для завантаження, попросити користувача
+          ввести, скільки ящиків завантажити у першу машину, у другу і т. д.,
+          поки на складі не закінчаться ящики з яблуками. Передбачити той
+          випадок, коли користувач вводить кількість, що перевищує поточну
+          кількість ящиків на складі.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let boxes = 15;
+      let count = 0;
+
+      while (boxes > 0) {
+        let load = parseInt(prompt("Скільки завантажити?", "5"));
+
+        if (load <= boxes) {
+          boxes -= load;
+          count++;
+        } else {
+          document.write(`Забагато! Є тільки ${boxes}<br>`);
+        }
+      }
+
+      document.write(`Завантажень: ${count}`);
+    </script>
+  </body>
+</html>

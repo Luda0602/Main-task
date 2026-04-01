@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 1</title>
+    <link rel="stylesheet" href="../lesson_5/css/task-style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a href="../index.html" class="back">← Назад</a>
+
+      <div class="card">
+        <h1>Задача 1</h1>
+
+        <p class="description">
+          З клавіатури вводяться числа та послідовно сумуються. Знайти кількість
+          введених користувачем чисел, коли їх сума перевищить 100.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let sum = 0;
+      let count = 0;
+
+      while (sum <= 100) {
+        let num = parseInt(prompt("Введіть число", "10"));
+        sum += num;
+        count++;
+      }
+
+      document.write(`Введених чисел: ${count}`);
+    </script>
+  </body>
+</html>
