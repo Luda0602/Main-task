@@ -14,23 +14,21 @@
         <h1>Задача 1</h1>
 
         <p class="description">
-          З клавіатури вводяться числа та послідовно сумуються. Знайти кількість
-          введених користувачем чисел, коли їх сума перевищить 100.
+          Вивести на екран усі двоцифрові числа, у яких перша цифра є більшою
+          або рівною за другу.
         </p>
       </div>
     </div>
 
     <script>
-      let sum = 0;
-      let count = 0;
+      for (let num = 10; num <= 99; num++) {
+        let first = Math.floor(num / 10);
+        let second = num % 10;
 
-      while (sum <= 100) {
-        let num = parseInt(prompt("Введіть число", "10"));
-        sum += num;
-        count++;
+        if (first >= second) {
+          document.write(num + "<br>");
+        }
       }
-
-      document.write(`Введених чисел: ${count}`);
     </script>
   </body>
 </html>

@@ -11,18 +11,25 @@
       <a href="../index.html" class="back">← Назад</a>
 
       <div class="card">
-        <h1>Задача 1</h1>
+        <h1>Задача 2</h1>
 
         <p class="description">
-          Використовуючи цикли вивести на екран 20 символів «о».
+          Інвестор вклав S тис. грн на 20 років під 20% річних. Визначити за
+          допомогою циклів суму, яку він одержить (без оподаткування).
         </p>
       </div>
     </div>
 
     <script>
-      for (let i = 0; i < 20; i++) {
-        document.write("o <br>");
+      let text = prompt("Введіть початкову суму", "1000");
+      // вводити з пробілами можна
+      let money = parseFloat(text.replaceAll(" ", ""));
+
+      for (let year = 1; year <= 20; year++) {
+        money += money * 0.2;
       }
+
+      document.write(`Сума через 20 років: ${money.toFixed(2)} грн`);
     </script>
   </body>
 </html>
