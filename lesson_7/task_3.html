@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 3</title>
+    <link rel="stylesheet" href="../lesson_5/css/task-style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a href="../index.html" class="back">← Назад</a>
+
+      <div class="card">
+        <h1>Задача 3</h1>
+
+        <p class="description">
+          Створити окремі функції, які для 4 чисел знаходять: <br />1)суму;
+          <br />2)добуток; <br />3)середнє арифметичне; <br />4)мінімальне
+          значення.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function getSum(a, b, c, d) {
+        let sum = a + b + c + d;
+
+        return sum;
+      }
+
+      function getProduct(a, b, c, d) {
+        let product = a * b * c * d;
+
+        return product;
+      }
+
+      function getAverage(a, b, c, d) {
+        let average = (a + b + c + d) / 4;
+
+        return average;
+      }
+
+      function getMin(a, b, c, d) {
+        let min = a;
+
+        if (b < min) min = b;
+        if (c < min) min = c;
+        if (d < min) min = d;
+
+        return min;
+      }
+
+      let a = parseFloat(prompt("Введіть перше число"));
+      let b = parseFloat(prompt("Введіть друге число"));
+      let c = parseFloat(prompt("Введіть третє число"));
+      let d = parseFloat(prompt("Введіть четверте число"));
+
+      document.write(`Сума: ${getSum(a, b, c, d)}<br>`);
+      document.write(`Добуток: ${getProduct(a, b, c, d)}<br>`);
+      document.write(`Середнє: ${getAverage(a, b, c, d)}<br>`);
+      document.write(`Мінімальне: ${getMin(a, b, c, d)}<br>`);
+    </script>
+  </body>
+</html>
